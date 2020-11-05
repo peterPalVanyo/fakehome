@@ -1,0 +1,31 @@
+{
+  "name": "fakehome",
+  "version": "1.0.0",
+  "description": "Nexter webpage",
+  "browserslist": "last 10 versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix:css": "postcss css/main.concat.css --use autoprefixer -o css/main.prefix.css",
+    "compress:css": "node-sass css/main.prefix.css css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterPalVanyo/fakeTours.git"
+  },
+  "author": "vanyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterPalVanyo/fakeTours/issues"
+  },
+  "homepage": "https://github.com/peterPalVanyo/fakeTours#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.1.0"
+  }
+}
