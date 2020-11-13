@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prefix:css": "postcss css/main.concat.css --use autoprefixer -o css/main.prefix.css",
+    "prefix:css": "postcss sass/main.css --use autoprefixer -o css/main.prefix.css",
     "compress:css": "node-sass css/main.prefix.css css/style.min.css --output-style compressed",
     "build:css": "npm-run-all prefix:css compress:css"
   },
